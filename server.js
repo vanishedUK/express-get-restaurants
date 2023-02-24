@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 // loading restaurant route
-const restaurantRouter = reqire("./routes/restaurants");
+const restaurantRouter = require("./routes/restaurants");
 
 // express routes
 app.use("/restaurants", restaurantRouter);
